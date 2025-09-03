@@ -1,0 +1,73 @@
+Arquivo explicativo sobre a semântica usada no HTML do currículo:
+
+---
+
+# Explicação da Semântica do HTML do Currículo
+
+## 1. `<header>`
+
+* Usei o `<header>` no início do documento para agrupar informações principais do currículo: o nome, e-mail, telefone e LinkedIn.
+* Justificativa: semanticamente, o `<header>` representa o cabeçalho de uma página ou seção, o que é ideal para apresentar informações de identificação.
+
+## 2. `<section>`
+
+* Cada grande parte do currículo (Perfil, Experiência Profissional, Formação Acadêmica, Habilidades, Idiomas) foi colocada dentro de uma `<section>`.
+* Justificativa: `<section>` é usada para agrupar conteúdo tematicamente relacionado. Cada seção tem um título (`<h2>`), tornando o currículo organizado e acessível.
+
+## 3. `<article>`
+
+* Cada experiência profissional e cada formação acadêmica foram encapsuladas dentro de `<article>`.
+* Justificativa: `<article>` representa conteúdo independente que poderia ser distribuído fora do contexto da página, como uma entrada de experiência ou curso.
+
+## 4. `<h1>`, `<h2>`, `<h3>`
+
+* `<h1>`: nome do candidato, usado apenas uma vez, representando o título principal da página.
+* `<h2>`: títulos das seções principais do currículo (Perfil, Experiência, Formação, etc.).
+* `<h3>`: subtítulos dentro das seções, como nome da empresa ou do curso.
+* Justificativa: Hierarquia de títulos correta melhora a acessibilidade e SEO, permitindo que leitores de tela e mecanismos de busca entendam a estrutura.
+
+## 5. `<p>`
+
+* Utilizado para parágrafos de texto explicativo, como o resumo profissional e descrição das experiências.
+* Justificativa: `<p>` é semântica para parágrafos de texto, mantendo o HTML limpo e estruturado.
+
+## 6. `<ul>` e `<li>`
+
+* Listas de responsabilidades, habilidades e idiomas foram marcadas com `<ul>` e `<li>`.
+* Justificativa: Listas são semanticamente corretas para itens relacionados, melhorando legibilidade e acessibilidade.
+
+## 7. `<footer>`
+
+* Contém informações de copyright e final do documento.
+* Justificativa: `<footer>` representa o rodapé de um documento ou seção, indicando informações complementares ou de autoria.
+
+## Benefícios da Semântica
+
+1. **Acessibilidade**: leitores de tela conseguem interpretar corretamente a hierarquia e estrutura do currículo.
+2. **SEO**: motores de busca entendem melhor o conteúdo, aumentando relevância.
+3. **Organização**: facilita manutenção e futuras melhorias de estilo ou funcionalidade.
+4. **Boas práticas**: HTML semântico é considerado padrão moderno e profissional.
+
+---
+
+## 1. Organização CSS
+
+*Utilizei uma pasta assets com a pasta css dentro
+*Ao invés de chamar cada arquivo css, utilizei um arquivo central que chama todos os outros, 
+assim facilitando a manutenção e legibilidade do código.
+
+## O que cada um faz
+
+1. *O `elements` são para as tags chamadas pelo seu próprio nome.
+2. *O `fonts` é para chamar a fonte.
+3. *O `global` é o arquivo central que chama os outros.
+4. *O `normalize` é o arquivo que vai definir as normas que o body vai seguir.
+5. *O `variables` é o responsável por definir as cores (em forma de variáevl).
+
+## 2. Propriedades
+
+*Utilizei o display: flex; para organizar, centralizar as tags.
+*Ao invés de usar px, utilizei medidas relativas como o vh e vw para aumentar a responsividade.
+*Todas as fontes são arial
+
+Fim do documento.

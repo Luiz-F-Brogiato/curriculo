@@ -1,0 +1,12 @@
+:root {
+  /* Background */
+  --bg-primary: #0D1117;        /* fundo principal escuro */
+  --bg-secondary: #161B22;      /* seções alternadas */
+  --bg-light: #F5F5F5;          /* fundo claro para cards ou highlights */
+
+  /* Texto */
+  --text-primary: #FFFFFF;      /* branco */
+  --text-secondary: #C9D1D9;    /* cinza claro */
+  --text-accent: #58A6FF;       /* azul para links e destaque */
+
+}
